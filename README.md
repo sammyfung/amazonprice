@@ -11,6 +11,10 @@ To sponsor my open source works and tutorials to support my income, please visit
 
 https://docs.google.com/presentation/d/1VKS5AJKSzxnqfQLvdw78C_z0Ljj_IOAvmgbm-tEfYyY/edit?usp=sharing
 
+## License
+
+Apache License Version 2.0
+
 ## Scrapy Basic 
 
 Installation (PIP method) of Scrapy

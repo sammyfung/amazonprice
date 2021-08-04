@@ -18,6 +18,8 @@ class AmazonSpider(scrapy.Spider):
                 pager = response.xpath('//div[contains(@class, "a-section")]/span[contains(@class, "widgetId=pagination-button")]/div/span/span/text()').extract()
             if len(pager) == 0:
                 pager = response.xpath('//div[contains(@class, "a-section")]/span[contains(@class, "widgetId=pagination-button")]/div/ul/li/text()').extract()
+            if len(pager) == 0:
+                pager = response.xpath('//div[contains(@class, "a-section")]/span[contains(@class, "widgetId=pagination-button")]/div/div/ul/li/text()').extract()
             try:
                 pages = int(pager[len(pager)-1])
                 for i in range(1, pages+1):
